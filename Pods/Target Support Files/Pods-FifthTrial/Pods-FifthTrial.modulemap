@@ -1,0 +1,6 @@
+module Pods_FifthTrial {
+  umbrella header "Pods-FifthTrial-umbrella.h"
+
+  export *
+  module * { export * }
+}

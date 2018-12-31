@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718F2B5F94DDDA44460151B5 /* libPods-FifthTrial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DFB4F9524ADF950375F4F6 /* libPods-FifthTrial.a */; };
 		CECF3C6821D9DF450091E0F4 /* FifthTrial.h in Headers */ = {isa = PBXBuildFile; fileRef = CECF3C6621D9DF450091E0F4 /* FifthTrial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECF3C6F21D9EDD30091E0F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF3C6E21D9EDD30091E0F4 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69DFB4F9524ADF950375F4F6 /* libPods-FifthTrial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FifthTrial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AB151CB180F667E33CC83C /* Pods-FifthTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FifthTrial.release.xcconfig"; path = "Pods/Target Support Files/Pods-FifthTrial/Pods-FifthTrial.release.xcconfig"; sourceTree = "<group>"; };
 		CECF3C6321D9DF450091E0F4 /* FifthTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FifthTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECF3C6621D9DF450091E0F4 /* FifthTrial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifthTrial.h; sourceTree = "<group>"; };
 		CECF3C6721D9DF450091E0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECF3C6E21D9EDD30091E0F4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7B79C71FD728242A8191F8E /* Pods-FifthTrial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FifthTrial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FifthTrial/Pods-FifthTrial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718F2B5F94DDDA44460151B5 /* libPods-FifthTrial.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049749554887B922DD64E9DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7B79C71FD728242A8191F8E /* Pods-FifthTrial.debug.xcconfig */,
+				A4AB151CB180F667E33CC83C /* Pods-FifthTrial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CECF3C5921D9DF450091E0F4 = {
 			isa = PBXGroup;
 			children = (
 				CECF3C6521D9DF450091E0F4 /* FifthTrial */,
 				CECF3C6421D9DF450091E0F4 /* Products */,
+				049749554887B922DD64E9DB /* Pods */,
+				D2F4E66310F540D1E4BEFA5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +64,19 @@
 		CECF3C6521D9DF450091E0F4 /* FifthTrial */ = {
 			isa = PBXGroup;
 			children = (
+				CECF3C6E21D9EDD30091E0F4 /* ViewController.swift */,
 				CECF3C6621D9DF450091E0F4 /* FifthTrial.h */,
 				CECF3C6721D9DF450091E0F4 /* Info.plist */,
 			);
 			path = FifthTrial;
+			sourceTree = "<group>";
+		};
+		D2F4E66310F540D1E4BEFA5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69DFB4F9524ADF950375F4F6 /* libPods-FifthTrial.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CECF3C6B21D9DF450091E0F4 /* Build configuration list for PBXNativeTarget "FifthTrial" */;
 			buildPhases = (
+				4D19CD9660BA65C309115CB1 /* [CP] Check Pods Manifest.lock */,
 				CECF3C5E21D9DF450091E0F4 /* Sources */,
 				CECF3C5F21D9DF450091E0F4 /* Frameworks */,
 				CECF3C6021D9DF450091E0F4 /* Headers */,
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					CECF3C6221D9DF450091E0F4 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -125,11 +154,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D19CD9660BA65C309115CB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FifthTrial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CECF3C5E21D9DF450091E0F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECF3C6F21D9EDD30091E0F4 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +309,9 @@
 		};
 		CECF3C6C21D9DF450091E0F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B79C71FD728242A8191F8E /* Pods-FifthTrial.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = VVDN.FifthTrial;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,7 +337,9 @@
 		};
 		CECF3C6D21D9DF450091E0F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AB151CB180F667E33CC83C /* Pods-FifthTrial.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
